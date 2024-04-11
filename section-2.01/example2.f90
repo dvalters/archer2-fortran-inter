@@ -15,6 +15,8 @@ program example2
   c%nlen = a%nlen
   c%values => a%values
 
+  c = b
+
   print *, "State of c ", c%nlen, associated(c%values), c%values
 
   call my_array_destroy(a)

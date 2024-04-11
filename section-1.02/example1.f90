@@ -14,13 +14,14 @@ contains
 
   subroutine initialise(array)
 
-    real, intent(inout) :: array(:)
+    real, intent(inout) :: array(0:)
 
     ! Initialise the values to the corresponsing index
 
     integer           :: i
 
-    do i = lbound(array, dim = 1), ubound(array, dim = 1)
+    do i = lbound(array, dim = 1), ubound(array, dim = 1)  
+      ! remember these intrinsic funtions return arrays, not scalars.
       array(i) = 1.0*i
     end do 
 

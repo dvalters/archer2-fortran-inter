@@ -28,4 +28,6 @@ program test1
   print *, "Sphere position: ", s%x
   print *, "Sphere radius    ", s%a
 
+  ch_sph = charged_sphere_t()
+
 end program test1

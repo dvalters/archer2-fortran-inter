@@ -53,4 +53,12 @@ contains
 
   end subroutine my_assignment
 
+  !----------------------------------------------------------------------------
+
+
+
+  !subroutine my_assignment_ptr(a, b)
+  ! Allow assignment between pointer t and array t
+    
+
 end module my_array_type

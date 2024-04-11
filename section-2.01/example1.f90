@@ -9,6 +9,11 @@ program example1
   b = my_semi_opaque(2, 3)
   a = b
 
+  print *, "type(a) ", type(a)
+  print *, "type(b) ", type(b)
+
   call my_semi_opaque_print("a", a)
+
+
 
 end program example1

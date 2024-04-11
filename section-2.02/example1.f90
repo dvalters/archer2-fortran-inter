@@ -12,9 +12,14 @@ program example1
   use my_array_type
   implicit none
 
+  interface my_array_t
+    module procedure :: my_array_allocate
+    module procedure :: my_array_allocate_from_int
+  end interface my_array_t
+
   type (my_array_t) :: a
 
-  a = my_array_allocate(3)
+  a = my_array_t(3, 7)
 
   print *, "State of a ", a%nlen, allocated(a%values), a%values(:)
 

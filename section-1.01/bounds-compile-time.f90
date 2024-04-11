@@ -4,6 +4,6 @@ program bounds_check1
   implicit none
   real :: array(3)
 
-  print *, "First array element ", array(0)
+  print *, "First array element ", array(4)
 
 end program bounds_check1

@@ -28,7 +28,7 @@ program example2
   print *, "sphere position ", p%x(:)
   !print *, "sphere radius   ", p%a
 
-  p => s
+  p => cs
   !print *, "sphere charge   ", p%q
 
   print *, "Select type: "
